@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edad futura</title>
+</head>
+<body>
+    <h1>Calculando edad futura</h1>
+    {% if edadFutura < edadActual %}
+        <h2>Estamos calculando tu edad futura</h2>
+    {% else %}
+        <p>Edad actual: {{ edadActual }}</p>
+        <p>Edad futura: {{ edadFutura }}</p>
+        <p>A&ntilde;o futuro: {{ anos }}</p>
+        <h2>En el a&ntilde;o {{anos}} asli tendra {{edadFutura}} a&ntilde;os</h2>
+    {% endif %}
+</body>
+</html>
